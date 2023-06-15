@@ -1,0 +1,120 @@
+
+<!-- 
+
+	연산자
+	----
+	단항 연산자 (++, --, !)
+	형변환 연산자 (int) => X (이건 자바에서 쓰임)
+		숫자 변경
+			Nuumber("10") => 10 , parseInt("10") => 10
+		문자열 변경
+			String(10) => "10"
+			Boolean(1) => true
+			Boolean(0) => false
+		boolean	변경
+	산술 연산자
+	비교 연산자
+	논리 연산자
+	대입 연산자
+	복합 대입 연산자
+	삼항 연산자
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type ="text/javascript">
+
+/*
+ * 	단항 연산자( ++ , -- ) => 증감연산자 (제어문, ...)
+ */
+ 
+ window.onload=function() {
+	 
+	 let a = 10;
+	 ++a
+	 
+	 // document.write() => 브라우저에 바로 출력
+	 // console.log() => 콘솔에 띄움
+	 
+	 document.write("a : "+a+"<br>")	//	브라우저는 <br>을 줘야 다음줄로 인식 
+	 
+	 /*
+	 	전치연산자 (증가 후 대입) / 후치연산자 (대입 후 증가)
+	 	++a, a++
+	 */
+	 
+	 let b = 10;
+	 let c = ++b;
+	 
+
+	 document.write("b : "+b+" , c : "+c+"<br>")
+	 
+	 let d = 10;
+	 let e = d++;
+	 
+	 document.write("d : "+d+" , e : "+d)
+	 
+	 
+	 
+	 
+	 let k = false;
+	 console.log("변경 전 k : "+k)
+	 
+	 k =! k;	// false를 true로 바꾼다 ( ! 부정연산자)
+	 console.log("변경 후 k : "+k) // true로 바뀜
+	 
+	 // 주의점
+	 let o = 1;	// 1(number)
+	 console.log("변경 전 o : "+o)
+	 
+	 o =! o;	// number를 부정연산자를 사용하면 => boolean으로 변환
+	 console.log("변경 후 o : "+o)
+	 
+	 
+	 // 모든 숫자 => 0, 0.0 외에 아닌 수는 true
+	 
+	 
+	 
+	 // 형변환 연산자
+	 let p = "10";	
+	 console.log("p : "+typeof p) // string
+	 console.log("p : "+typeof Number(p)) // number
+	 console.log("p : "+typeof parseInt(p)) // number
+	 console.log("p : "+typeof Boolean(p))  // boolean
+	 
+	 let h = 10;
+	 console.log("h : "+ typeof h+"<br>")	// number
+	 console.log(typeof String(h)+" , "+h)	// string으로 바꿈 
+	 
+	 
+	 /*
+	 	형변환 연산자 : 브라우저에서 값을 가지고 오는 경우 => 문자열로 들어온다
+	 				정수형으로 변경 후에 처리
+	 				Number(p), parseInt(p)
+	 	문자열 변경 : String(변수)
+	 	문자열 결합 : +
+	 	true/false => Boolean
+	 				 ---------
+	 				 	숫자는 0, 0.0 => false
+	 				 			이외에 값은 다 true
+	 				 	문자열 : null => false
+	 				 			값이 있는 경우 true
+	 	부정연산자 (!) => true/false
+	 				
+	 */
+	 
+	 
+ }
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
