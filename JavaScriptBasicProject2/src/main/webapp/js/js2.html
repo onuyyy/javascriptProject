@@ -1,0 +1,37 @@
+<!--
+	
+	매개변수로 전달되는 함수 = callback 함수
+	
+	-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	
+	function f() {
+		for(let i=1; i<=10; i++) {
+			a()
+		}
+	}
+	
+	
+	// a = 콜백 함수 : 매개변수로 들어가는 함수
+	let a = function() {
+		document.write("함수 호출..<br>")
+	}
+	
+window.onload=function() {
+	f(a)
+}	
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type = "text/javascript">
+	
+window.onload=function() {
+	
+	let a = {
+		x:10,
+		y:20,
+		sum:function() {return this.x+this.y},
+		name:["a","b"]
+		
+	}
+	
+	document.write(a.x)
+	document.write(a.y)
+	
+	document.write(a.name)
+	document.write(a.sum())
+
+	document.write('<hr>')
+
+	for(let i in a.name) {
+		document.write(i+"<br>")
+	}
+	
+	document.write('<hr>')
+	
+	for(let j of a.name) {
+		document.write(j)
+	}
+
+}	
+	
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	
+window.onload=function() {
+	
+	let sawon = {
+		sabun:1, 
+		name:"김윤영", 
+		dept:"개발", 
+		job:"과장"
+	}
+	
+	document.write(sawon.dept)
+	document.write(sawon.job)
+	document.write(sawon.sabun)
+	document.write(sawon.name)
+	
+	document.write('<hr>')
+	
+	for(let n in sawon) {
+		document.write(sawon[n])
+	}
+	
+	
+	document.write('<hr>')
+	
+	document.write(sawon['job'])
+	document.write(sawon['name'])
+	document.write(sawon['sabun'])
+	document.write(sawon['dept'])
+
+
+}	
+
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

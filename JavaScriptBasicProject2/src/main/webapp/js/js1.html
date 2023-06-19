@@ -1,0 +1,73 @@
+<!--
+	
+	익명의 함수 : let 힘수 = function() {구현부}
+	
+	선언적 함수 : function 함수() {구현부}
+	
+	= 선억적 함수 유형
+		1. function name(매개변수) {처리 ... return 값}
+		2. function name() {처리... return 값}
+		3. function name(매개변수,매개변수,...) {처리...}
+												==> return; 쓸 수 있음 (함수 종료시점, 생략 가능)
+		4. function name() {처리...}
+	
+	= 익명의 함수
+		let name = function() {}
+		let name=()=>{}
+		
+		function name(x,y,z) {
+			return x+y+z
+		}	
+		
+		function name(x,y,z)=>x+y+z
+		
+-->											
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	
+function add1(a,b)
+{
+	return a+b;
+}
+function add1(a,b)
+{
+	return a+b+"값";
+}
+let add2=function(a,b)
+{
+	return a+b;
+}
+let add3=(a,b)=>a+b
+let add4=(a,b)=>{return a+b;}
+	
+window.onload=function(){
+	let a=10;
+	let b=20;
+	let c=add1(a,b);
+	let d=add2(a,b);
+	let e=add3(a,b);
+	let f=add4(a,b);
+	
+	document.write("c="+c+" , "+typeof add1+"<br>")
+	document.write("d="+d+" , "+typeof add2+"<br>")
+	document.write("e="+e+" , "+typeof add3+"<br>")
+	document.write("f="+f+" , "+typeof add4+"<br>")
+}
+
+
+</script>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
